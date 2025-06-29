@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Tudásszint Felmérő</title>
+  <link rel="stylesheet" href="/Style/index.css">
+  <script src="/Js/index.js" defer></script>
+</head>
+<body>
+  <h1>Tudásszint Felmérő</h1>
+
+
+  <form id="quizForm">
+     <!-- 1. feleletválasztó (1 helyes válasz lehetséges, radio) -->
+    <fieldset>
+      <legend>1. Melyik nyelv működik a böngészőben?</legend>
+      <label><input type="radio" name="q1" value="JavaScript"> JavaScript</label>
+      <label><input type="radio" name="q1" value="Python"> Python</label>
+      <label><input type="radio" name="q1" value="C#"> C#</label>
+    </fieldset>
+   <!-- 2. feleletválasztó (2 vagy több helyes válasz lehetséges, checkbox) -->
+    <fieldset>
+      <legend>2. Melyek frontend technológiák?</legend>
+      <label><input type="checkbox" name="q2" value="HTML"> HTML</label>
+      <label><input type="checkbox" name="q2" value="CSS"> CSS</label>
+      <label><input type="checkbox" name="q2" value="Node.js"> Node.js</label>
+      <label><input type="checkbox" name="q2" value="JavaScript"> JavaScript</label>
+    </fieldset>
+      <!--3. rövid szöveg(text, egyetlen egy szót vár megoldásként, érdemes megoldani a kis- és
+      nagybetűk problémáját, korlátozzák, hogy csak betűket lehet beírni, reguláris kifejezés) -->
+    <fieldset>
+    <label>
+      <legend>3. Melyik nyelvben néz ki így egy egyszerű for ciklus: <p> for i in range(10): print(i) ?</p></legend>
+      <input type="text" name="q3" pattern="[a-zA-Z]+">
+    </label>
+    </fieldset>
+     <!-- 4. kifejtős (textarea, 3 kulcsszó megléte a helyes (100%-os) válasz feltétele) -->
+    <fieldset>
+    <label>
+      <legend>4. Mit tudsz a kiberbiztonságról? (Írj 1-2 mondatot, szerepeljen benne 3 kulcsszó: 'védelem', 'támadás', 'adat')</legend>
+      <textarea name="q4" rows="4" cols="50"></textarea>
+    </label>
+    </fieldset>
+     <!-- 5. kiegészítendő mondat, 2db select elemmel kell megvalósítani (2 helyen 4 szóból kell a
+helyeset kiválasztani, a 4 lehetséges válasz sorrendjét a betöltéskor véletlenszerűen kell
+meghatározni) -->
+    <fieldset>
+  <legend>5. Egészítsd ki a mondatot!</legend>
+  <div class="q5-line">
+    A <select name="q5a"></select> felel a weboldal szerkezetének kialakításáért.
+    A <select name="q5b"></select> pedig a weboldal működéséért.
+  </div>
+</fieldset>
+
+
+    <!-- „Ellenőriz” feliratú gomb (csak akkor látható, ha minden mező kitöltésre került, a végén %-
+    ban meghatározott eredményt kell kiírni) -->
+    <br>
+    <button type="button" id="checkBtn" class="hidden">Ellenőriz</button>
+  </form>
+
+  <div id="result"></div>
+
+
+</body>
+</html>

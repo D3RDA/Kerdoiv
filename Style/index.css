@@ -1,0 +1,132 @@
+
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: white;
+}
+
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+fieldset {
+  border: 2px solid #3498db;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  background-color: #ecf0f1;
+}
+
+
+legend {
+  font-weight: 600;
+  color: #2980b9;
+  padding: 0 8px;
+  font-size: 1.1rem;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type="text"],
+select,
+textarea {
+  font-size: 1rem;
+  padding: 8px 10px;
+  border: 1.5px solid #bdc3c7;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  margin-top: 6px;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px #3498db;
+}
+
+
+
+#checkBtn {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#checkBtn:hover:not(.hidden) {
+  background-color: #1f618d;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+
+#result {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #27ae60;
+}
+
+fieldset:nth-of-type(5) label {
+  display: inline;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+
+fieldset:nth-of-type(5) select {
+  display: inline;
+  width: auto;
+  min-width: 100px;
+  margin: 0 4px;
+  padding: 2px 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1.5px solid #bdc3c7;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
